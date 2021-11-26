@@ -12,12 +12,7 @@ A backbone for your coding challenge.
 
 ### Backend
 
-- Django 3.1.5
-
-#### Additional libs
-
-- sqlite3 (SQLite connection)
-- django-cors-headers (CORS support)
+- FastAPI 0.70.0
 
 ### Misc
 
@@ -34,14 +29,14 @@ A backbone for your coding challenge.
 
 ```bash
 npm install
-npm run build # both FastAPI backend
+npm run build
 ```
 
 4. Start your app.
 
 ```bash
 npm install
-npm run start # both FastAPI backend
+npm run start
 ```
 
 5. Run the Cypress tests.
