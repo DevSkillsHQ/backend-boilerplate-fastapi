@@ -8,6 +8,8 @@ database = Database("sqlite:///app.db")
 
 app = FastAPI()
 
+# NOTE: Feel free to restructure the code and database schema the way you prefer. This is only an example.
+
 @app.on_event("startup")
 async def database_connect():
     await database.connect()
