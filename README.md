@@ -12,7 +12,8 @@ A backbone for your coding challenge.
 
 ### Backend
 
-- FastAPI 0.70.0
+- [FastAPI](https://fastapi.tiangolo.com)
+- [databases](https://pypi.org/project/databases/)
 
 ### Misc
 
