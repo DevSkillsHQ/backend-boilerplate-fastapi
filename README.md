@@ -1,11 +1,10 @@
-# Fullstack Boilerplate Django/React
+# Backend Boilerplate FastAPI/Python
 
 A backbone for your coding challenge.
 
 ## Contents
 
 - [Backend service](app-backend) - a Django service with a `/ping` endpoint.
-- [Frontend app](app-frontend) - a React/NextJS app.
 - [E2E test suites](cypress/integration) - a backend and a frontend Cypress test suites. Extend with your tests.
 - [Pipeline](.github/workflows/tests.yml) - a test Runner that executes the Cypress tests on push to a branch other than `master`/`main`.
 
@@ -19,16 +18,6 @@ A backbone for your coding challenge.
 
 - sqlite3 (SQLite connection)
 - django-cors-headers (CORS support)
-
-### Frontend
-
-- Next 10
-- React 17
-
-#### Additional libs
-
-- tailwindcss 2 (css)
-- DOM/React Testing Library / Jest (testing)
 
 ### Misc
 
@@ -45,18 +34,14 @@ A backbone for your coding challenge.
 
 ```bash
 npm install
-npm run build # both Django backend and Next frontend
-npm run build:backend # only Django backend
-npm run build:frontend # only Next frontend
+npm run build # both FastAPI backend
 ```
 
 4. Start your app.
 
 ```bash
 npm install
-npm run start # both Django backend and Next frontend
-npm run start:backend # only Django backend
-npm run start:frontend # only Next frontend
+npm run start # both FastAPI backend
 ```
 
 5. Run the Cypress tests.
