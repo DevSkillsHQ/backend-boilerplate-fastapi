@@ -1,3 +1,3 @@
-fastapi==0.120.2
+fastapi==0.120.3
 uvicorn[standard]==0.38.0
 databases[sqlite]==0.9.0
