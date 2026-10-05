@@ -1,9 +1,23 @@
+# Grouped, weekly updates (QOHP-1356). Majors of packages that only work together arrive
+# as one PR per family; every minor and patch update of a directory arrives as one PR.
 version: 2
 updates:
   - package-ecosystem: "pip"
     directory: "/app"
     schedule:
-      interval: "daily"
-    labels:
-      - "python"
-      - "dependencies"
+      interval: "weekly"
+    open-pull-requests-limit: 10
+    groups:
+      fastapi:
+        patterns:
+          - "fastapi"
+          - "starlette"
+          - "pydantic"
+          - "pydantic-*"
+          - "uvicorn"
+        update-types:
+          - "major"
+      minor-and-patch:
+        update-types:
+          - "minor"
+          - "patch"
