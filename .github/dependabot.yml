@@ -3,7 +3,19 @@ updates:
   - package-ecosystem: "pip"
     directory: "/app"
     schedule:
-      interval: "daily"
-    labels:
-      - "python"
-      - "dependencies"
+      interval: "weekly"
+    open-pull-requests-limit: 10
+    groups:
+      fastapi:
+        patterns:
+          - "fastapi"
+          - "starlette"
+          - "pydantic"
+          - "pydantic-*"
+          - "uvicorn"
+        update-types:
+          - "major"
+      minor-and-patch:
+        update-types:
+          - "minor"
+          - "patch"
