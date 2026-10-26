@@ -13,7 +13,7 @@ jobs:
   # Verifies the boilerplate can start and run in GitHub Actions environment
   test-for-workflow:
     name: Alva test workflow
-    uses: DevSkillsHQ/publish-test-results-workflow/.github/workflows/publish-test-results.yml@main
+    uses: DevSkillsHQ/publish-test-results-workflow/.github/workflows/publish-test-results.yml@qoha-3834-cypress-action-v7
     with:
       python_version: '3.14'
   
@@ -47,13 +47,13 @@ jobs:
       # Running tests for all challenges except Backend.
       - name: Run tests without waiting on API
         if: env.apiUrl == ''
-        uses: cypress-io/github-action@v5
+        uses: cypress-io/github-action@v7
         with:
           build: npm run build
           start: npm run start
       - name: Run tests with waiting on API
         if: env.apiUrl != ''
-        uses: cypress-io/github-action@v5
+        uses: cypress-io/github-action@v7
         with:
           build: npm run build
           start: npm run start
